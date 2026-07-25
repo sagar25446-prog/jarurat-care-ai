@@ -87,6 +87,26 @@ export default function ChatbotPage() {
       {/* Chat Area */}
       <main className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
         <div className="max-w-3xl mx-auto space-y-6">
+          
+          {/* Prominent Medical Disclaimer Banner */}
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg shadow-sm">
+            <div className="flex items-start">
+              <div className="flex-shrink-0">
+                <Info className="h-5 w-5 text-red-500" />
+              </div>
+              <div className="ml-3">
+                <h3 className="text-sm font-bold text-red-800">IMPORTANT MEDICAL DISCLAIMER</h3>
+                <div className="mt-1 text-sm text-red-700">
+                  <p>
+                    This AI is a guide, not a doctor. <strong>Do not</strong> use this tool for medical diagnoses. 
+                    Any clinical trial suggestions or guidance must be independently verified on official registries like 
+                    <a href="https://ctri.nic.in" className="underline font-semibold ml-1">CTRI (ctri.nic.in)</a> or discussed directly with your oncologist before taking any action.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <AnimatePresence>
             {messages.map((msg) => (
               <motion.div
@@ -108,7 +128,7 @@ export default function ChatbotPage() {
                         ? 'bg-gray-900 text-white rounded-br-none' 
                         : 'bg-white text-gray-800 border border-gray-100 shadow-sm rounded-bl-none'
                     }`}>
-                      <p className="leading-relaxed text-[15px]">{msg.content}</p>
+                      <p className="leading-relaxed text-[15px] whitespace-pre-wrap">{msg.content}</p>
                     </div>
 
                     {/* Render Trial Cards if any */}
@@ -187,8 +207,8 @@ export default function ChatbotPage() {
               {isTyping ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5" />}
             </button>
           </form>
-          <p className="text-center text-xs text-gray-400 mt-3">
-            Jarurat AI can make mistakes. Please verify clinical trial information with a healthcare professional.
+          <p className="text-center text-xs text-red-600 font-medium mt-3">
+            Warning: AI can hallucinate. Always verify clinical trials via official CTRI registry.
           </p>
         </div>
       </footer>
