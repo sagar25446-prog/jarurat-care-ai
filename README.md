@@ -1,16 +1,39 @@
-# React + Vite
+# 🩺 Jarurat Care AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> An AI-focused healthcare application prototype built with React and Vite.
 
-Currently, two official plugins are available:
+Jarurat Care AI is an experimental project exploring how a lightweight web interface can be combined with AI-oriented product ideas for healthcare and assistance workflows.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Why this project
 
-## React Compiler
+Healthcare software should feel simple, fast and approachable. This project is part of my broader exploration of **AI + full-stack product development**, alongside larger systems such as [Q-Care](https://github.com/sagar25446-prog/Hospital-Management-System) and [GuruFlow](https://github.com/sagar25446-prog/AI-Innovation-Hackathon).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Stack
 
-## Expanding the Oxlint configuration
+- **Frontend:** React
+- **Build:** Vite
+- **Development:** Hot Module Replacement
+- **Code quality:** Oxlint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Run locally
+
+```bash
+git clone https://github.com/sagar25446-prog/jarurat-care-ai.git
+cd jarurat-care-ai
+npm install
+npm run dev
+```
+
+Then open the local URL printed by Vite.
+
+## 🧭 Project direction
+
+This repository is intentionally a smaller prototype. It represents an iterative stage in my work on AI-enabled healthcare products rather than claiming to be a production medical system.
+
+## 👨‍💻 Author
+
+**Sagar Hundia** — [GitHub](https://github.com/sagar25446-prog)
+
+---
+
+`build fast · learn fast · improve the system`
